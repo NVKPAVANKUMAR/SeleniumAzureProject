@@ -45,6 +45,8 @@ local.properties
 .factorypath
 .idea
 WebDriverManagerTest.iml
+.gitignore
+
 
 ##############################
 ## OS X
