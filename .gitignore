@@ -43,6 +43,8 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+.idea
+WebDriverManagerTest.iml
 
 ##############################
 ## OS X
