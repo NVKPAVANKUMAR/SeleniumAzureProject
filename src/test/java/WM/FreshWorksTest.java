@@ -58,7 +58,7 @@ public class FreshWorksTest {
 	@Test(priority = 1)
 	public void freshWorkslogoTest() {
 		boolean flag = false;
-			flag = driver.findElement(By.cssSelector("a.logo.logo-fworks11")).isDisplayed();
+			flag = driver.findElement(By.cssSelector("a.logo.logo-fworks")).isDisplayed();
 			Assert.assertTrue(flag);
 	}
 
@@ -71,6 +71,7 @@ public class FreshWorksTest {
 
 	@Test(priority = 3)
 	public void getFooterLinksTest() {
+		System.out.println("running links test...");
 		List<WebElement> footerLinksList = driver.findElements(By.cssSelector("ul.footer-nav li a"));
 		footerLinksList.forEach(ele -> System.out.println(ele.getText()));
 		assertEquals(footerLinksList.size(), 35);
